@@ -13,7 +13,7 @@ export function Logo() {
   );
 }
 
-export function SiteHeader({ initialQuery = "" }: { initialQuery?: string }) {
+export function SiteHeader({ initialQuery = "" }: { initialQuery?: string | undefined }) {
   const { location, setLocationOpen, count, subtotal, setCartOpen } = useStore();
   const [q, setQ] = useState(initialQuery);
   const navigate = useNavigate();

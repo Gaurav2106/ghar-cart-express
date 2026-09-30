@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { SiteFooter, SiteHeader } from "./SiteHeader";
 
-export function StoreLayout({ children, initialQuery }: { children: ReactNode; initialQuery?: string }) {
+export function StoreLayout({ children, initialQuery }: { children: ReactNode; initialQuery?: string | undefined }) {
   return (
     <div className="min-h-screen">
       <SiteHeader initialQuery={initialQuery} />

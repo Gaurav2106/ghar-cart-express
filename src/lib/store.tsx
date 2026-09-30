@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { products, type Product } from "./catalog";
 
-export type Location = { pincode: string; area: string; city: string; eta: number; address?: string };
+export type Location = { pincode: string; area: string; city: string; eta: number; address?: string | undefined };
 type Ctx = {
   cart: Record<string, number>;
   items: { product: Product; qty: number }[];
